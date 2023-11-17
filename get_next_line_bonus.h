@@ -6,16 +6,16 @@
 /*   By: tsilva-s <tsilva-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 16:55:26 by tsilva-s          #+#    #+#             */
-/*   Updated: 2023/11/17 19:31:12 by tsilva-s         ###   ########.fr       */
+/*   Updated: 2023/11/17 21:28:07 by tsilva-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GET_NEXT_LINE_BONUS_H
 # define GET_NEXT_LINE_BONUS_H
 
-// #ifndef BUFFER_SIZE
-// #define BUFFER_SIZE 5
-// #endif
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 5
+# endif
 
 # include <unistd.h>
 # include <stdio.h>
