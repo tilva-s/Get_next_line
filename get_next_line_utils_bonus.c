@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tsilva-s <tsilva-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/16 19:25:13 by tsilva-s          #+#    #+#             */
-/*   Updated: 2023/11/17 19:56:10 by tsilva-s         ###   ########.fr       */
+/*   Created: 2023/11/17 16:54:53 by tsilva-s          #+#    #+#             */
+/*   Updated: 2023/11/17 19:48:17 by tsilva-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 char	*ft_strjoin(char *s1, char *s2)
 {
@@ -89,4 +89,24 @@ ssize_t	buffer_clear(char *buffer)
 		i++;
 	}
 	return (result);
+}
+
+int	check_problems(int fd, char *buffer)
+{
+	size_t	i;
+
+	i = 0;
+	if (fd < 0 || BUFFER_SIZE <= 0 || fd > FOPEN_MAX)
+	{
+		if (fd >= 0 && fd <= FOPEN_MAX)
+		{
+			while (i < BUFFER_SIZE)
+			{
+				buffer[i] = '\0';
+				i++;
+			}
+		}
+		return (1);
+	}
+	return (0);
 }

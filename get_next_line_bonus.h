@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.h                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tsilva-s <tsilva-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/16 19:24:49 by tsilva-s          #+#    #+#             */
-/*   Updated: 2023/11/17 19:40:11 by tsilva-s         ###   ########.fr       */
+/*   Created: 2023/11/17 16:55:26 by tsilva-s          #+#    #+#             */
+/*   Updated: 2023/11/17 19:31:12 by tsilva-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#ifndef GET_NEXT_LINE_BONUS_H
+# define GET_NEXT_LINE_BONUS_H
 
-//#ifndef BUFFER_SIZE
-//#define BUFFER_SIZE 5
-//#endif
+// #ifndef BUFFER_SIZE
+// #define BUFFER_SIZE 5
+// #endif
 
 # include <unistd.h>
 # include <stdio.h>
@@ -27,5 +27,6 @@ char	*ft_strjoin(char *s1, char *s2);
 char	*line_cut(char *line);
 ssize_t	buffer_clear(char *buffer);
 size_t	ft_strlen(char *str);
+int		check_problems(int fd, char *buffer);
 
 #endif
