@@ -6,7 +6,7 @@
 /*   By: tsilva-s <tsilva-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 19:13:05 by tsilva-s          #+#    #+#             */
-/*   Updated: 2023/11/17 19:38:57 by tsilva-s         ###   ########.fr       */
+/*   Updated: 2023/11/18 14:58:47 by tsilva-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*get_next_line(int fd)
 	static char	buffer[BUFFER_SIZE + 1];
 	ssize_t		retorno;
 
+	if (check_problems(fd, buffer))
+		return (NULL);
 	line = NULL;
 	while (1)
 	{

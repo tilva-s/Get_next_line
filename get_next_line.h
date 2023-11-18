@@ -6,7 +6,7 @@
 /*   By: tsilva-s <tsilva-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 19:24:49 by tsilva-s          #+#    #+#             */
-/*   Updated: 2023/11/17 21:27:40 by tsilva-s         ###   ########.fr       */
+/*   Updated: 2023/11/18 15:05:52 by tsilva-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,6 @@ char	*ft_strjoin(char *s1, char *s2);
 char	*line_cut(char *line);
 ssize_t	buffer_clear(char *buffer);
 size_t	ft_strlen(char *str);
+int		check_problems(int fd, char *buffer);
 
 #endif
